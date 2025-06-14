@@ -82,7 +82,7 @@ function App() {
       <h1>PurrPal Adopt-Stop</h1>
       <main className="mt-20 flex flex-column text-center">
         <Button
-          className="m-auto petBtn"
+          className="m-auto mb-5 petBtn pInfo"
           onClick={() => setShow(true)}
         >
           Add Animal

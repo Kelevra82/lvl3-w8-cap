@@ -1,6 +1,7 @@
 $primary: #071318;
 $secondary: #b7691f;
 $accent: #39cdd8;
+$cream: #ffd6a7;
 
 body {
   background-color: $primary;
@@ -8,24 +9,27 @@ body {
 }
 
 h1 {
-  align-items: center;
-  justify-content: center;
+  color: $secondary;
 }
 
 .pets {
   background-color: $primary;
+  color: $secondary;
+}
+
+.pInfo {
+  color: $cream !important;
 }
 
 .petBtn {
   background-color: transparent;
-
   transition: box-shadow 0.3s ease-in-out;
-  border: transparent;
+  border: none;
   color: $secondary;
 
   &:hover {
     background-color: transparent;
-    color: $accent;
+    color: $secondary;
     box-shadow: 0px 10px 10px -10px rgb(59, 191, 224);
   }
 }

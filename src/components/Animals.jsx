@@ -36,7 +36,7 @@ export default function Animals({
                   />
                 </div>
                 <Button
-                  className="w-100"
+                  className="w-100 petBtn"
                   size="sm"
                   variant="light"
                   onClick={() => onEditImage(animal)}
@@ -51,17 +51,18 @@ export default function Animals({
                 </div>
 
                 <div>
-                  <div>
+                  <div className="pInfo">
                     {animal.kidFriendly && "Kid Friendly"}
                     {!animal.kidFriendly && "Not Kid Friendly"}
                   </div>
-                  <div>
+                  <div className="pInfo">
                     {animal.vaccinated && "Vaccinated"}
                     {!animal.vaccinated && "Not Vaccinated"}
                   </div>
                 </div>
                 <div>
                   <Button
+                    className="petBtn"
                     size="sm"
                     onClick={() => onAdoptToggle(animal)}
                   >
@@ -69,6 +70,7 @@ export default function Animals({
                     {!animal.adopted && "Adopt"}
                   </Button>
                   <Button
+                    className="petBtn"
                     onClick={() => onDelete(animal.id)}
                     variant="danger"
                     size="sm"

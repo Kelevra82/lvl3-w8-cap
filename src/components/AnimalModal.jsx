@@ -9,11 +9,14 @@ export default function AnimalModal({ show, onHide, form, onChange, onSave }) {
       onHide={onHide}
     >
       <Modal.Dialog>
-        <Modal.Header closeButton>
+        <Modal.Header
+          closeButton
+          className="pets"
+        >
           <Modal.Title>Add New Animal</Modal.Title>
         </Modal.Header>
 
-        <Modal.Body>
+        <Modal.Body className="pets pInfo">
           <Form>
             <Form.Group controlId="formName">
               <Form.Label>Name</Form.Label>
@@ -69,15 +72,15 @@ export default function AnimalModal({ show, onHide, form, onChange, onSave }) {
           </Form>
         </Modal.Body>
 
-        <Modal.Footer>
+        <Modal.Footer className="pets">
           <Button
-            variant="secondary"
+            className="petBtn"
             onClick={onHide}
           >
             Cancel
           </Button>
           <Button
-            variant="primary"
+            className="petBtn"
             onClick={onSave}
           >
             Save Animal
